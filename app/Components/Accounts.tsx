@@ -73,29 +73,34 @@ export default function Accounts() {
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel className="text-center">Accounts</DropdownMenuLabel>
         <DropdownMenuSeparator />
-
-        {Accounts?.map((i, k: number) => (
-          <Link href={i?.accountURL} target={"_blank"} key={k}>
-            <DropdownMenuCheckboxItem
-              onCheckedChange={setShowStatusBar}
-              className="cursor-pointer"
-            >
-              <DropdownMenuSeparator />
-              {i?.accountPlatform === "Github" ? (
-                <BsGithub className="text-xl mr-2" />
-              ) : i?.accountPlatform === "LinkedIn" ? (
-                <BsLinkedin className="text-xl mr-2" />
-              ) : i?.accountPlatform === "Discord" ? (
-                <BsDiscord className="text-xl mr-2" />
-              ) : i?.accountPlatform === "Facebook" ? (
-                <BsFacebook className="text-xl mr-2" />
-              ) : i?.accountPlatform === "Steam" ? (
-                <BsSteam className="text-xl mr-2" />
-              ) : null}
-              {i?.accountPlatform}
-            </DropdownMenuCheckboxItem>
-          </Link>
-        ))}
+        {!Accounts ? (
+          <BsWifiOff className="text-2xl ml-auto mr-auto" />
+        ) : (
+          <>
+            {Accounts?.map((i, k: number) => (
+              <Link href={i?.accountURL} target={"_blank"} key={k}>
+                <DropdownMenuCheckboxItem
+                  onCheckedChange={setShowStatusBar}
+                  className="cursor-pointer"
+                >
+                  <DropdownMenuSeparator />
+                  {i?.accountPlatform === "Github" ? (
+                    <BsGithub className="text-xl mr-2" />
+                  ) : i?.accountPlatform === "LinkedIn" ? (
+                    <BsLinkedin className="text-xl mr-2" />
+                  ) : i?.accountPlatform === "Discord" ? (
+                    <BsDiscord className="text-xl mr-2" />
+                  ) : i?.accountPlatform === "Facebook" ? (
+                    <BsFacebook className="text-xl mr-2" />
+                  ) : i?.accountPlatform === "Steam" ? (
+                    <BsSteam className="text-xl mr-2" />
+                  ) : null}
+                  {i?.accountPlatform}
+                </DropdownMenuCheckboxItem>
+              </Link>
+            ))}
+          </>
+        )}
       </DropdownMenuContent>
     </DropdownMenu>
   );
