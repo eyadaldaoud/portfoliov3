@@ -3,10 +3,7 @@ import Projectimage from "./Projectimage";
 import { client, urlFor } from "@/app/lib/sanity";
 import Link from "next/link";
 import { TbNetwork } from "react-icons/tb";
-import { revalidatePath } from "next/cache";
 import { Badge } from "../shadcn/badge";
-import { Roboto } from "next/font/google";
-import { Network } from "lucide-react";
 
 type DataProps = {
   title: string;
@@ -24,7 +21,6 @@ export async function getProjects(): Promise<DataProps[]> {
     .catch((err) => {
       console.log(err);
     });
-  revalidatePath("/");
   return projects;
 }
 
