@@ -55,7 +55,7 @@ const Projects: any = async () => {
     <>
       <div className="flex justify-center text-center">
         <h1 className="border rounded px-6 py-1 mt-4 text-xl dark:hover:bg-gray-900 hover:bg-slate-300 cursor-pointer">
-          Innovations <Badge>{data?.length > 0 ? data?.length : 0}</Badge>
+          Projects <Badge>{data?.length > 0 ? data?.length : 0}</Badge>
         </h1>
       </div>
       <div className="flex justify-center font-sans">
