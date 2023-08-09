@@ -74,7 +74,7 @@ const Projects: any = async () => {
                 <div className="font-bold text-xl mb-2 border-b-2 border-black dark:border-white pb-2">
                   {i?.title}
                 </div>
-                <p className="text-gray-700 text-base">{i?.body}</p>
+                <p className="dark:text-gray-500 text-gray-700 text-base">{i?.body}</p>
               </div>
               <div className="flex flex-wrap justify-center p-2">
                 {i.github ? (
