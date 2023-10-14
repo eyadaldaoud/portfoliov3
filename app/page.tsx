@@ -5,9 +5,7 @@ import { arabic } from "./lib/Fonts";
 export default async function Home() {
   return (
     <>
-      <h1
-        className={`${arabic.className} mt-8 mb-8 text-center sm:text-5xl text-4xl`}
-      >
+      <h1 className={` mt-8 mb-8 text-center sm:text-5xl text-4xl`}>
         فَأَخَذَهُمُ الطُّوفَانُ وَهُمْ ظَالِمُونَ
       </h1>
       <h1 className="text-center sm:text-xl text-sm font-serif font-bold text-gray-300">
