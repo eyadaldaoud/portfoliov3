@@ -5,7 +5,7 @@ import { arabic, en } from "./lib/Fonts";
 export default async function Home() {
   return (
     <>
-      <div className="text-center">
+      <div className="text-center p-4">
         <h1 className={` mt-8 mb-4  sm:text-5xl text-4xl`}>
           فَأَخَذَهُمُ الطُّوفَانُ وَهُمْ ظَالِمُونَ
         </h1>
