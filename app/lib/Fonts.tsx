@@ -1,3 +1,3 @@
-import { Amiri_Quran } from "next/font/google";
+import { Reem_Kufi_Fun } from "next/font/google";
 
-export const arabic = Amiri_Quran({ weight: "400", subsets: ["arabic"] });
+export const arabic = Reem_Kufi_Fun({ weight: "400", subsets: ["arabic"] });
