@@ -5,8 +5,6 @@ import { arabic, en } from "./lib/Fonts";
 export default async function Home() {
   return (
     <>
-   
-
       <div className="flex justify-center mt-12">
         <Accounts />
       </div>
