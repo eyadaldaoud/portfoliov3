@@ -1,6 +1,5 @@
 import Accounts from "./Components/Accounts";
 import Projects from "./Components/Projects";
-import { arabic, en } from "./lib/Fonts";
 
 export default async function Home() {
   return (

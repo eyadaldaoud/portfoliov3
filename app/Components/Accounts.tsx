@@ -22,6 +22,7 @@ import {
   BsSteam,
   BsWifiOff,
 } from "react-icons/bs";
+import { IoLogoVercel } from "react-icons/io5";
 
 type Checked = DropdownMenuCheckboxItemProps["checked"];
 
