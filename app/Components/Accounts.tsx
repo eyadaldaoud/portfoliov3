@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu";
-
+import { RiTwitterXFill } from "react-icons/ri";
 import { Button } from "../shadcn/button";
 import {
   DropdownMenu,
@@ -16,13 +16,12 @@ import { client } from "../lib/sanity";
 import Link from "next/link";
 import {
   BsDiscord,
-  BsFacebook,
   BsGithub,
   BsLinkedin,
   BsSteam,
   BsWifiOff,
 } from "react-icons/bs";
-import { IoLogoVercel } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa6";
 
 type Checked = DropdownMenuCheckboxItemProps["checked"];
 
@@ -87,12 +86,14 @@ export default function Accounts() {
                   <DropdownMenuSeparator />
                   {i?.accountPlatform === "Github" ? (
                     <BsGithub className="text-xl mr-2" />
+                  ) : i?.accountPlatform === "X" ? (
+                    <RiTwitterXFill className="text-xl mr-2" />
                   ) : i?.accountPlatform === "LinkedIn" ? (
                     <BsLinkedin className="text-xl mr-2" />
                   ) : i?.accountPlatform === "Discord" ? (
                     <BsDiscord className="text-xl mr-2" />
-                  ) : i?.accountPlatform === "Facebook" ? (
-                    <BsFacebook className="text-xl mr-2" />
+                  ) : i?.accountPlatform === "Instagram" ? (
+                    <FaInstagram className="text-xl mr-2" />
                   ) : i?.accountPlatform === "Steam" ? (
                     <BsSteam className="text-xl mr-2" />
                   ) : null}
