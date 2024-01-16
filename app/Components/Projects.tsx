@@ -17,7 +17,7 @@ type DataProps = {
 
 export async function getProjects(): Promise<DataProps[]> {
   const projects = await client
-    .fetch(`*[_type == "projects"] | order(_createdAt desc)`)
+    .fetch(`*[_type == "projects"] | order(_updatedAt desc)`)
     .catch((err) => {
       console.log(err);
     });
