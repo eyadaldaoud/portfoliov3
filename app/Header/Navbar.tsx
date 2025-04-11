@@ -7,9 +7,9 @@ const Navbar: any = async () => {
     <div>
       <nav className="bg-white border-gray-200 dark:bg-black border-b-2 dark:border-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link href={"/"} className="flex items-center">
+          <Link href={"https://eyad.vercel.app"} className="flex items-center">
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Eyad
+              Eyad (Old click for v4)
             </span>
           </Link>
           <div className="flex items-center md:order-2">
